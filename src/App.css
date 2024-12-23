@@ -219,7 +219,7 @@
   border-color: red;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
   .headermenu{
     display:none;
@@ -228,7 +228,8 @@
   
   .header{
     display: flex;
-    flex-direction: center;
+    justify-content: space-evenly;
+    
   }
 
   .hamburger{
@@ -283,4 +284,13 @@
     height: auto;
   }
 
+  .bod2text h2{
+    font-size: 25px;
+    
+  }
+  
+  .bod2text h1{
+    font-size: 38px;
+    font-weight: lighter;
+  }
 }
