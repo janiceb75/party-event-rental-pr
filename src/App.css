@@ -21,15 +21,44 @@
   margin-top: 10px;
 }
 
+.logo.active{
+  width: 150px;
+  height:auto;
+  /* margin-left: 100px; */
+  margin-top: 10px;
+  margin-left:0;
+}
+
 .headermenu{
   display: flex;
   gap: 30px;
   margin-top: 20px;
   align-items: center;
-  font-size: 20px;
-  
+  font-size: 20px; 
 
 }
+
+
+.header.active{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  justify-content: flex-start;
+  text-align: left;
+
+}
+
+.headermenu.active{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 20px; 
+
+}
+
 .menuitem.active {
   padding-bottom: 5px;
   border-bottom: 2px solid black;
@@ -41,7 +70,11 @@
   font-size: 50px;
   margin-right: 100px;
   margin-top: 20px;
-  
+
+}
+
+.hamburger{
+  display: none;
 
 }
 
@@ -51,6 +84,9 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
 }
 .hero{
   padding:100px;  
@@ -58,6 +94,7 @@
   background: radial-gradient(circle, rgba(95, 130, 227, 0.9), rgba(144, 190, 245, 0.7), rgba(255, 255, 255, 0));
   color: whitesmoke;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -180,4 +217,70 @@
 .body8{
   border-style: solid;
   border-color: red;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .headermenu{
+    display:none;
+    
+  }
+  
+  .header{
+    display: flex;
+    flex-direction: center;
+  }
+
+  .hamburger{
+    display: block;
+    font-size: 35px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: blue;
+  
+  }
+
+  .quote{
+    font-size: 50px;
+    /* margin-right: 0px; */
+    margin-top: 20px;
+  
+  }
+  
+  .hero{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .body2{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .bod2text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .bod2img img{
+    margin-top: 75px;
+    margin-left:0;
+    margin-right: 0;
+    width:600px;
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .body3{
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
 }
