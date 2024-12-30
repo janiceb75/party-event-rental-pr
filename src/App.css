@@ -290,7 +290,21 @@
   }
   
   .bod2text h1{
-    font-size: 38px;
+    font-size: 28px;
     font-weight: lighter;
+  }
+
+  .bod2img img{
+    
+    width: 450;
+    height: 350;
+  }
+  .body2{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
   }
 }

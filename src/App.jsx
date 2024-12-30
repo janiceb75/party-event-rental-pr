@@ -48,7 +48,7 @@ function App() {
           <div className="menuitem" onClick={handleClick}>Contact Us</div>
         </div>
         <div className="quote"><TiShoppingCart /></div>
-        <div className ="hamburger" onClick={burgerClick}><FaBars/></div>
+        <div className ="hamburger"><FaBars/></div>
       </div>
       <div className="body">
         <div className="hero">
