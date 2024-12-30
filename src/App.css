@@ -9,89 +9,91 @@
   display: flex;
   flex-direction: row;
 } */
-.header{
-  display:flex;
-  justify-content: space-between;
+.header {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  justify-content: center;
 }
 
-.logo img{
-  width: 150px;
-  height:auto;
-  margin-left: 100px;
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  height: 100px;
+  width: 100%;
+  margin-left: 5%;
   margin-top: 10px;
 }
 
-.logo.active{
-  width: 150px;
-  height:auto;
+.logo.active {
+  /* width: 150px; */
+  height: auto;
   /* margin-left: 100px; */
   margin-top: 10px;
-  margin-left:0;
+  margin-left: 0;
 }
 
-.headermenu{
+.headermenu {
   display: flex;
   gap: 30px;
   margin-top: 20px;
   align-items: center;
-  font-size: 20px; 
-
+  font-size: 20px;
 }
 
-
-.header.active{
+.header.active {
   display: flex;
   flex-direction: column;
   margin-left: 0;
   justify-content: flex-start;
   text-align: left;
-
 }
 
-.headermenu.active{
+.headermenu.active {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 20px;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 20px; 
-
+  font-size: 20px;
 }
 
 .menuitem.active {
   padding-bottom: 5px;
   border-bottom: 2px solid black;
-  
-
 }
 
-.quote{
+.quote {
   font-size: 50px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   margin-top: 20px;
-
 }
 
-.hamburger{
+.hamburger {
   display: none;
-
 }
 
-.body{
+.body {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
-.hero{
-  padding:100px;  
+.hero {
+  padding: 100px;
   background-color: rgba(95, 130, 227, 0.927);
-  background: radial-gradient(circle, rgba(95, 130, 227, 0.9), rgba(144, 190, 245, 0.7), rgba(255, 255, 255, 0));
+  background: radial-gradient(
+    circle,
+    rgba(95, 130, 227, 0.9),
+    rgba(144, 190, 245, 0.7),
+    rgba(255, 255, 255, 0)
+  );
   color: whitesmoke;
   display: flex;
   width: 100%;
@@ -100,65 +102,57 @@
   align-items: center;
 }
 
-.hero h1{
+.hero h1 {
   font-size: 50px;
- }
+}
 
-.hero h3{
+.hero h3 {
   font-weight: 100;
- }
+}
 
-.but{
+.but {
   color: blue;
-  padding:20px 10px;
+  padding: 20px 10px;
   width: 300px;
   border-radius: 10px;
   font-size: 18px;
   background-color: yellow;
   border-color: yellow;
-  
 }
-.body2{
-    
-    display: flex;
-    justify-content: center;
-    
-  }
-.bod2text{
+.body2 {
+  display: flex;
+  justify-content: center;
+}
+.bod2text {
   margin-top: 75px;
-
 }
 
-.bod2text h2{
+.bod2text h2 {
   font-size: 30px;
-  
 }
 
-.bod2text h1{
+.bod2text h1 {
   font-size: 58px;
   font-weight: lighter;
 }
 
-.bod2text p{
+.bod2text p {
   font-size: 18px;
   font-weight: lighter;
 }
 
-
-.bod2img img{
+.bod2img img {
   margin-top: 75px;
   margin-left: 80px;
-  width:600px;
-  height: 400px;;
+  width: 600px;
+  height: 400px;
 }
 
-
-.body3{
-
+.body3 {
   border-style: solid;
-  color:yellow;
+  color: yellow;
   width: 1000px;
-  height:175px;
+  height: 175px;
   background-color: yellow;
   border-radius: 20px;
   margin-top: 100px;
@@ -167,27 +161,28 @@
   padding: 0 80px 10px 80px;
 }
 
-.bod3{
+.bod3 {
   border-style: solid;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content:end;
+  justify-content: end;
   align-items: center;
 }
-.api1, .api2, .api3{
-  color:blue;
+.api1,
+.api2,
+.api3 {
+  color: blue;
   font-size: 60px;
-  
-
 }
 
-.bod3atext, .bod3btext, .bod3ctext{
-  color:black;
-  
+.bod3atext,
+.bod3btext,
+.bod3ctext {
+  color: black;
 }
 
-.body4{
+.body4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,68 +192,83 @@
   height: auto; */
 }
 
-.body4 h1{
+.body4 h1 {
   font-size: 50px;
   font-weight: lighter;
+}
+.body5 {
+  border-style: solid;
+  border-color: red;
+}
+.body6 {
+  border-style: solid;
+  border-color: red;
+}
+.body7 {
+  border-style: solid;
+  border-color: red;
+}
+.body8 {
+  border-style: solid;
+  border-color: red;
+}
 
-}
-.body5{
-  border-style: solid;
-  border-color: red;
-}
-.body6{
-  border-style: solid;
-  border-color: red;
-}
-.body7{
-  border-style: solid;
-  border-color: red;
-}
-.body8{
-  border-style: solid;
-  border-color: red;
+.mobilemenu {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
-
-  .headermenu{
-    display:none;
-    
-  }
-  
-  .header{
+  .mobilemenu {
     display: flex;
-    justify-content: space-evenly;
-    
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 80%;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding: 10%;
+    row-gap: 5%;
+    font-size: 25px;
   }
 
-  .hamburger{
+  .mobilelogo img {
+    width: 70%;
+  }
+
+  .headermenu {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
     display: block;
     font-size: 35px;
-    margin-right: 25px;
+    margin-right: 1%;
     margin-top: 25px;
     color: blue;
-  
   }
 
-  .quote{
+  .quote {
     font-size: 50px;
     /* margin-right: 0px; */
     margin-top: 20px;
-  
   }
-  
-  .hero{
+
+  .hero {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .body2{
-    
+  .body2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
   }
 
   .bod2text {
@@ -266,45 +276,29 @@
     align-items: center;
     text-align: center;
   }
-  
-  
-  .bod2img img{
+
+  .bod2img img {
     margin-top: 75px;
-    margin-left:0;
+    margin-left: 0;
     margin-right: 0;
-    width:600px;
+    width: 600px;
     height: 400px;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .body3{
+  .body3 {
     flex-direction: column;
     width: auto;
     height: auto;
   }
 
-  .bod2text h2{
+  .bod2text h2 {
     font-size: 25px;
-    
-  }
-  
-  .bod2text h1{
-    font-size: 28px;
-    font-weight: lighter;
   }
 
-  .bod2img img{
-    
-    width: 450;
-    height: 350;
-  }
-  .body2{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+  .bod2text h1 {
+    font-size: 38px;
+    font-weight: lighter;
   }
 }
